@@ -1,0 +1,16 @@
+---
+version: 2
+plan:
+  project-key: ROCKET
+  name: Launch Rocket
+  key: LAUNCH
+
+stages:
+  - First Build Stage:
+      jobs: 
+        - Build Ship Server
+
+Build Ship Server:
+  tasks:
+    - script:
+        - echo 'Hello world'
